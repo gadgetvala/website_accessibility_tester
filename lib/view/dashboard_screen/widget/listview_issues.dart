@@ -1,16 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:wat/model/pa11y_response_model.dart';
 import 'package:wat/res/res.dart';
+import 'package:wat/view/dashboard_screen/provider/dashboard_provider.dart';
 
-class ListViewIssues extends StatelessWidget {
+class ListViewIssues extends ConsumerWidget {
   const ListViewIssues({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, ScopedReader watch) {
+    final _provider = watch(dashboardProvider);
+
     return Expanded(
       child: ListView.builder(
         physics: BouncingScrollPhysics(),
-        itemCount: 50,
+        itemCount: _provider.data!.issues.length,
         itemBuilder: (BuildContext ctx, int index) {
+          final Issues data = _provider.data!.issues[index];
+
           return Container(
             padding: EdgeInsets.all(16),
             margin: EdgeInsets.all(20),
@@ -27,7 +34,7 @@ class ListViewIssues extends StatelessWidget {
               children: [
                 /// Message
                 Text(
-                  'This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.01:1. Recommendation:  change background to #2b3435.',
+                  data.message,
                   style: TextStyle(
                     color: colors.primaryFontColor,
                     fontWeight: FontWeight.w600,
@@ -43,7 +50,7 @@ class ListViewIssues extends StatelessWidget {
                     ),
                     children: [
                       TextSpan(
-                        text: 'WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail',
+                        text: data.code,
                         style: TextStyle(
                           color: colors.primaryFontColor,
                         ),
@@ -61,8 +68,7 @@ class ListViewIssues extends StatelessWidget {
                     ),
                     children: [
                       TextSpan(
-                        text:
-                            '<li class=\"sc-jJoQpE cmGyex\">Designing, developing, testing,...</li>',
+                        text: data.context,
                         style: TextStyle(
                           color: colors.primaryFontColor,
                           fontWeight: FontWeight.w400,
@@ -81,8 +87,7 @@ class ListViewIssues extends StatelessWidget {
                     ),
                     children: [
                       TextSpan(
-                        text:
-                            '#root > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > ul > li:nth-child(1)',
+                        text: data.selector,
                         style: TextStyle(
                           color: colors.primaryFontColor,
                           fontWeight: FontWeight.w400,
