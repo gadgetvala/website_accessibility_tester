@@ -10,8 +10,6 @@ import 'locator/locator.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   setupLocator();
-  // TODO uncomment after connecting Firebase
-  // await Firebase.initializeApp();
   final Preferences prefs = locator<Preferences>();
   await prefs.init();
   SystemChrome.setPreferredOrientations([
