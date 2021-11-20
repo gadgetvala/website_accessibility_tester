@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:wat/res/res.dart';
+import 'package:wat/view/dashboard_screen/provider/dashboard_provider.dart';
 
-class SearchHeader extends StatelessWidget {
+class SearchHeader extends ConsumerWidget {
   const SearchHeader({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, ScopedReader watch) {
+    final _provider = watch(dashboardProvider);
+
     return Padding(
       padding: const EdgeInsets.all(20),
       child: Row(
@@ -15,6 +19,7 @@ class SearchHeader extends StatelessWidget {
               style: TextStyle(
                 color: colors.primaryFontColor,
               ),
+              controller: _provider.searchBoxController,
               keyboardType: TextInputType.text,
               // controller: widget.controller,
               decoration: InputDecoration(
@@ -38,19 +43,26 @@ class SearchHeader extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 20),
-          Container(
-            padding: EdgeInsets.all(14),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(8),
-              color: colors.secondaryColor,
-            ),
-            child: Center(
-              child: Text(
-                'Search',
-                style: TextStyle(
-                  color: colors.primaryColor,
-                  fontWeight: FontWeight.w600,
-                  letterSpacing: 0.5,
+          GestureDetector(
+            onTap: () {
+              if (_provider.searchBoxController.text.isNotEmpty) {
+                _provider.getWebsiteDetails();
+              }
+            },
+            child: Container(
+              padding: EdgeInsets.all(14),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: colors.secondaryColor,
+              ),
+              child: Center(
+                child: Text(
+                  'Search',
+                  style: TextStyle(
+                    color: colors.primaryColor,
+                    fontWeight: FontWeight.w600,
+                    letterSpacing: 0.5,
+                  ),
                 ),
               ),
             ),
