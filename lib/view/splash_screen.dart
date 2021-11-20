@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wat/res/res.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:wat/view/dashboard_screen/dashboard_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   static const String id = "/splashScreen";
@@ -26,8 +27,8 @@ class _SplashScreenState extends State<SplashScreen> {
     await Future.delayed(
       const Duration(milliseconds: 5000),
       () {
-        // Navigator.pushNamedAndRemoveUntil(
-        //     context, DashboardScreen.id, (route) => false);
+        Navigator.pushNamedAndRemoveUntil(
+            context, DashboardScreen.id, (route) => false);
       },
     );
   }
@@ -35,43 +36,16 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/images/background_image.png'),
-            fit: BoxFit.cover,
-          ),
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Expanded(child: Container()),
-            Expanded(
-              child: Column(
-                children: [
-                  const SizedBox(height: 20),
-                  Text("Hello!",
-                      style: GoogleFonts.playfairDisplay(
-                          fontWeight: FontWeight.w400, fontSize: 48)),
-                  const SizedBox(height: 20),
-                  Text(
-                    "Welcome to Furballs Veterinary",
-                    style: GoogleFonts.playfairDisplay(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 24,
-                    ),
-                  ),
-                  Text(
-                    "The Vet for your Pet",
-                    style: GoogleFonts.poppins(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 16,
-                    ),
-                  ),
-                ],
-              ),
+      body: SafeArea(
+        child: Center(
+          child: Text(
+            "W ! A ! T !",
+            style: GoogleFonts.playfairDisplay(
+              fontWeight: FontWeight.w800,
+              fontSize: 30,
+              color: Color(0xff002237),
             ),
-          ],
+          ),
         ),
       ),
     );
