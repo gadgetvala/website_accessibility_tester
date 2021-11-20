@@ -31,6 +31,7 @@ class ListViewIssues extends ConsumerWidget {
               ],
             ),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 /// Message
                 Text(
