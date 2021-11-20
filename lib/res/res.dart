@@ -10,9 +10,9 @@ late AppColors colors;
 late AppSizes sizes;
 late AppTextStyles textStyles;
 
-void initializeResources({required BuildContext context}) {
+void initializeResources({required BuildContext context, required bool dark}) {
   sizes = AppSizes()..initializeSize(context);
-  colors = AppColors();
+  colors = AppColors()..initializeColor(dark: dark);
   assets = Assets();
   textStyles = AppTextStyles();
 }
