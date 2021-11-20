@@ -21,18 +21,17 @@ class SearchHeader extends ConsumerWidget {
               ),
               controller: _provider.searchBoxController,
               keyboardType: TextInputType.text,
-              // controller: widget.controller,
               decoration: InputDecoration(
                 fillColor: colors.primaryColor,
                 filled: true,
                 border: UnderlineInputBorder(
                     borderRadius: BorderRadius.circular(8)),
                 focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: colors.secondaryfontColor),
+                  borderSide: BorderSide(color: colors.borderColor),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: colors.secondaryfontColor),
+                  borderSide: BorderSide(color: colors.borderColor),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 suffixIcon: Icon(Icons.search_rounded),
@@ -59,7 +58,7 @@ class SearchHeader extends ConsumerWidget {
                 child: Text(
                   'Search',
                   style: TextStyle(
-                    color: colors.primaryColor,
+                    color: colors.primaryFontColor,
                     fontWeight: FontWeight.w600,
                     letterSpacing: 0.5,
                   ),
