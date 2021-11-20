@@ -4,7 +4,8 @@ import 'package:wat/locator/locator.dart';
 
 class ApiCore {
   static final ApiLinks _apiLinks = locator<ApiLinks>();
-  final Dio apiClient = Dio(
+
+  static final Dio apiClient = Dio(
     BaseOptions(
       baseUrl: _apiLinks.baseUrl,
     ),
