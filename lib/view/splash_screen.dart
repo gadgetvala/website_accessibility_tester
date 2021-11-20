@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/src/provider.dart';
+import 'package:wat/provider/theme_provider.dart';
 import 'package:wat/res/res.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:wat/view/dashboard_screen/dashboard_screen.dart';
@@ -16,7 +18,8 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     WidgetsBinding.instance?.addPostFrameCallback((_) {
-      initializeResources(context: context);
+      initializeResources(
+          context: context, dark: context.read(themeProvider).isDark);
       initialize();
     });
   }
