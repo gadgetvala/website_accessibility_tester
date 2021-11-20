@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wat/view/dashboard_screen/dashboard_screen.dart';
+import 'package:wat/view/settings_screen/settings_screen.dart';
 import 'package:wat/view/splash_screen.dart';
 import 'package:wat/view/tabbar_controller/tabbar_controller.dart';
 
@@ -11,6 +12,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const SplashScreen());
       case DashboardScreen.id:
         return MaterialPageRoute(builder: (_) => const DashboardScreen());
+      case SettingsScreen.id:
+        return MaterialPageRoute(builder: (_) => const SettingsScreen());
       case TabBarController.id:
         return MaterialPageRoute(builder: (_) => const TabBarController());
 
