@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-https://github.com/gadgetvala/website_accessibility_tester/blob/main/readme_files/flutter_demo.mp4
+https://user-images.githubusercontent.com/25782628/144748265-940a94ad-d474-4812-aae9-ba0fd6c3645d.mp4
 
 ## 🚀 &nbsp;Installation
 
