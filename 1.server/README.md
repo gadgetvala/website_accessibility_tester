@@ -1,6 +1,3 @@
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/gadgetvala/ website_accessibility_tester/issues)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555)](https://www.linkedin.com/in/gadgetvala/)
-
 # Introduction
 
 > “Website Accessibility Tester Backend”
@@ -71,8 +68,7 @@ Let me explain the other directories.
 
 ## :clap: Done
 
-Feel free to **file a new issue** with a respective title and description on the the [Website Accessibility Tester](https://github.com/gadgetvala/website_accessibility_tester
-/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**!
+Feel free to **file a new issue** with a respective title and description on the the [Website Accessibility Tester](https://github.com/gadgetvala/website_accessibility_tester/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**!
 
 ## 📘&nbsp; License
 
