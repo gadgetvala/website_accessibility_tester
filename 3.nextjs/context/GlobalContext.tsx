@@ -11,6 +11,8 @@ import { ThemeTypeEnum } from "../types/themeTypes";
 interface GlobalContextInterface {
   currentTheme: ThemeTypeEnum;
   setCurrentTheme: Dispatch<SetStateAction<ThemeTypeEnum>>;
+  result: [];
+  setResult: Dispatch<SetStateAction<[]>>;
 }
 
 // Context
@@ -21,10 +23,13 @@ export const GlobalProvider = ({ children }: { children: ReactChild }) => {
   const [currentTheme, setCurrentTheme] = useState<ThemeTypeEnum>(
     ThemeTypeEnum.light
   );
+  const [result, setResult] = useState<[]>([]);
 
   let values: GlobalContextInterface = {
     currentTheme,
     setCurrentTheme,
+    result,
+    setResult,
   };
 
   return (
