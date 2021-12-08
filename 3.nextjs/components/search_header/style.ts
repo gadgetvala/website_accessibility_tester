@@ -18,6 +18,11 @@ export const InputContainer = styled.input`
   font-size: 1.2rem;
   border: 1px solid ${(props) => props.theme.borderColor};
   background-color: ${(props) => props.theme.primaryColor};
+
+  @media (max-width: 430px) {
+    flex: 1;
+    max-width: 200px;
+  }
 `;
 
 export const SearchButton = styled.div`
@@ -31,4 +36,8 @@ export const SearchButton = styled.div`
   text-align: center;
   border-radius: 10px;
   background-color: ${(props) => props.theme.secondaryColor};
+
+  @media (max-width: 430px) {
+    margin-left: 1rem;
+  }
 `;
