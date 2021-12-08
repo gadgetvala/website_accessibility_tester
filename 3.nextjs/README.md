@@ -1,34 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Introduction
 
-## Getting Started
+> “Website Accessibility Tester Frontend
+> is simple web application built with next.js & typescript.
 
-First, run the development server:
+## :bulb: Key Features
+
+- [x] Check Website Bugs.
+- [x] Built with Typescript.
+- [x] Used Styled Components.
+- [x] Tost Notification.
+- [x] Dark Mode.
+- [x] Responsive.
+
+## 🚀 &nbsp;Installation
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/) installed on your computer. From your command line:
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone this repository
+$ git clone https://github.com/gadgetvala/website_accessibility_tester.git
+
+# Go into the repository
+$ cd website_accessibility_tester/3.nextjs
+
+# Install dependencies
+$ npm install
+
+# Run the app in Development
+$ npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Packages
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Some very good packages are used in the project, not a big list.
+Below are the information about these packages.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+| package                                                         | explain                                                              |
+| --------------------------------------------------------------- | -------------------------------------------------------------------- |
+| [axios](https://www.npmjs.com/package/compression)              | Promise based HTTP client for the browser and node.js                |
+| [react-toastify](https://www.npmjs.com/package/connect-timeout) | React-Toastify allows you to add notifications to your app with ease |
+| [styled-components](https://www.npmjs.com/package/cors)         | Visual primitives for the component age.                             |
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Directory Structure
 
-## Learn More
+The project directory structure in src is as follows:
 
-To learn more about Next.js, take a look at the following resources:
+```
+├── components
+├── context
+├── pages
+├── public
+├── styles
+├── types
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Let me explain the other directories.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+| directory  | explain                           |
+| ---------- | --------------------------------- |
+| components | Contains Smaller React Components |
+| context    | Global App Context                |
+| pages      | App Pages                         |
+| public     | Public Folders and Pages          |
+| types      | Types and Interface               |
 
-## Deploy on Vercel
+## :clap: Done
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Feel free to **file a new issue** with a respective title and description on the the [Website Accessibility Tester](https://github.com/gadgetvala/website_accessibility_tester/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📘&nbsp; License
+
+TheWebsite Accessibility Tester app is released under the under terms of the [MIT License](LICENSE).
+
+## :heart: Contributor
+
+Made by [Suraj Verma](https://github.com/gadgetvala)
