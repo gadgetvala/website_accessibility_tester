@@ -23,3 +23,22 @@ export const EmptyDataContainer = styled.div`
   margin: 0 auto;
   padding: 2rem 1rem 2rem 1rem;
 `;
+
+export const DisplayDetailsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & > p {
+    font-weight: 600;
+    letter-spacing: 1px;
+    white-space: 1px;
+    color: ${(props) => props.theme.primaryFontColor};
+    margin-bottom: 1rem;
+
+    & > span {
+      color: ${(props) => props.theme.secondaryColor};
+    }
+  }
+`;
