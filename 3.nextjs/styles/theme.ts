@@ -13,7 +13,7 @@ export const lightTheme: ThemeProps = {
   primaryColor: "#f0f5f9",
   secondaryColor: "#784ffe",
   primaryFontColor: "#002237",
-  borderColor: "#ffffff",
+  borderColor: "#202a30",
 };
 
 export const darkTheme: ThemeProps = {
@@ -21,7 +21,7 @@ export const darkTheme: ThemeProps = {
   primaryColor: "#202a30",
   secondaryColor: "#784ffe",
   primaryFontColor: "#ffffff",
-  borderColor: "#202a30",
+  borderColor: "#ffffff",
 };
 
 export const GlobalStyles = createGlobalStyle`
