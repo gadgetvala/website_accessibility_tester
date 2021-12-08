@@ -12,7 +12,7 @@
 
 ## 🚀 &nbsp;Installation
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Flutter](https://flutter.dev/docs/get-started/install) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
