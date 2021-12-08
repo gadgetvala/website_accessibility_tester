@@ -9,6 +9,10 @@
 
 <img src="readme_files/flutter_banner.png" />
 
+## 🚀 &nbsp;[Next.JS](https://github.com/gadgetvala/website_accessibility_tester/tree/main/3.nextjs)
+
+<img src="readme_files/nextjs_banner.png" />
+
 ## :clap: Done
 
 Feel free to **file a new issue** with a respective title and description on the the [Website Accessibility Tester](https://github.com/gadgetvala/website_accessibility_tester/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**!
