@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const SearchContainer = styled.div`
-  margin: 0 auto;
-  /* background-color: ${(props) => props.theme.backgroundColor}; */
+  margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,6 +22,7 @@ export const InputContainer = styled.input`
 
 export const SearchButton = styled.div`
   flex: 1;
+  cursor: pointer;
   margin-left: 4rem;
   color: ${(props) => props.theme.primaryFontColor};
   font-weight: 600;
