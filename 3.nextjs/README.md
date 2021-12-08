@@ -12,6 +12,10 @@
 - [x] Dark Mode.
 - [x] Responsive.
 
+## Live Demo
+
+https://user-images.githubusercontent.com/25782628/145175737-de27de24-0630-49e2-85e9-c19775b2ff73.mp4
+
 ## 🚀 &nbsp;Installation
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/) installed on your computer. From your command line:
@@ -21,6 +25,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 $ git clone https://github.com/gadgetvala/website_accessibility_tester.git
 
 # Go into the repository
+
+
+
+
 $ cd website_accessibility_tester/3.nextjs
 
 # Install dependencies
